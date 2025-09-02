@@ -10,7 +10,7 @@ async function fetchVideo() {
   }
 
   try {
-    const response = await fetch("http://localhost:5000/api/download", {
+    const response = await fetch("https://video-downloader-production-1235.up.railway.app/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ url })
